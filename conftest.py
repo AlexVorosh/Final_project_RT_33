@@ -7,7 +7,7 @@ BASE_URL = 'https://b2c.passport.rt.ru/'
 
 @pytest.fixture(scope='module')
 def driver():
-    service = Service('C:/Users/asvor/OneDrive/Desktop/Unit_29/chromedriver/chromedriver.exe')
+    service = Service('C:/chromedriver/chromedriver.exe')
     driver = webdriver.Chrome(service=service)
     driver.implicitly_wait(5)
     driver.maximize_window()
