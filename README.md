@@ -4,11 +4,11 @@
 
 При тестировании сайты были разработаны:
 
- - Тест-кейсы
+ - Тест-кейсы.
 
-- Автоматизированные тесты
+- Автоматизированные тесты.
 
-- Составлены баг-репорты
+- Составлены баг-репорты.
 
 При тестировании сайта были применены следующие техники тест-дизайна:
 
@@ -18,11 +18,11 @@
 
 При тестировании сайта были использованы инструменты:
 
-- https://texttools.ru/random-string-generator — генератор случайных строк — помощь в создании строк нужной длины и набора символов
+- https://texttools.ru/random-string-generator — генератор случайных строк — помощь в создании строк нужной длины и набора символов.
 
 - https://text.ru/seo — подсчет символов в тексте — применялось для тестирования граничных значений для ввода в поля формы регистрации нового пользователя: имя, фамилия, email, номер телефона, пароль.
 
-- Плагин для Chrome XPath Helper – помощь в редактированиии и поиск XPath локатора на веб-странице
+- Плагин для Chrome XPath Helper – помощь в редактированиии и поиск XPath локатора на веб-странице.
 
 
 Структура проекта:
@@ -30,16 +30,16 @@
 - Папка tests содержит следующие файлы: 
   - test_auth_negative.py –  негативные тесты страницы авторизации; 
   - test_auth_positive.py –  позитивные тесты страницы авторизации; 
-  - test_forgot_password.py – позитивные тесты страницы восстановления пароля; 
+  - test_forgot_password.py – тесты страницы восстановления пароля; 
   - test_reg_negative.py - негативные тесты страницы регистрации; 
   - test_reg_positive.py - позитивные тесты страницы регистрации; 
-  - test_tab_switching.py – автоматическое переключение вкладок на странице авторизации
+  - test_tab_switching.py – автоматическое переключение вкладок на странице авторизации;
 
 Также проект содержит такие файлы, как: 
 
-  - conftest.py – фикстуры для работы с браузером 
-  - locators.py – список всех локаторов
-  - settings.py – список валидных и невалидных данных для тестирования 
+  - conftest.py – фикстуры для работы с браузером; 
+  - locators.py – список всех локаторов;
+  - settings.py – список валидных и невалидных данных для тестирования; 
 
 Для запуска автотестов необходимо вводить команды в консоли терминала. 
 
@@ -63,7 +63,7 @@
  - python -m pytest -v --driver Chrome --driver-path ‪<chromedriver_directory>\<chromedriver_file>
  tests\test_auth_negative.py
 
-Для позитивных тестов восстановления пароля:
+Для тестов восстановления пароля:
 
   - python -m pytest -v --driver Chrome --driver-path ‪<chromedriver_directory>\<chromedriver_file>
  tests\test_forgot_password.py
@@ -73,4 +73,4 @@
   - python -m pytest -v --driver Chrome --driver-path ‪<chromedriver_directory>\<chromedriver_file>
  tests\test_tab_switching.py
 
-<chromedriver_directory><chromedriver_file> - путь к директории файла драйвера\название файла браузера. Например: C:\Chrome-selenium\chromedriver.exe
+<chromedriver_directory><chromedriver_file> - путь к директории файла драйвера\название файла браузера. Например: C:\chromedriver\chromedriver.exe
