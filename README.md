@@ -13,6 +13,8 @@
 
 - Составлены баг-репорты.
 
+- Google документ: https://docs.google.com/spreadsheets/d/13WDZuTLUOV5eG0RCRIeOLJK7I_4p2m_WeBZ8qpyIiMI/edit?usp=sharing
+
 
 При тестировании сайта были применены следующие техники тест-дизайна:
 
